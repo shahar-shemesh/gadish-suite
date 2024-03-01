@@ -1,9 +1,9 @@
-.heroSection {
+.Header {
   display: grid;
   // grid-template-columns: repeat(2, 1fr);
   grid-template-columns: 2fr 1fr;
   padding: 8.3rem 8.3rem 3.3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
@@ -14,6 +14,11 @@
   background-repeat: no-repeat; 
 
 }
+
+.desc {
+  background-color: transparent;
+}
+
 
 
 .content {
@@ -26,18 +31,12 @@
 }
 
 .title {
-  color: var(--heading-color);
-  font-size: 3.5rem;
+  color: white;
+  font-size: 6.5rem;
   line-height: 5.5rem;
   font-weight: 700;
   align-self: stretch;
   background-color: transparent;
-}
-
-
-
-.myName {
-  color: #577b6a;
 }
 
 .dot {
@@ -48,39 +47,11 @@
   color: var(--primary);
 }
 
-.description {
-  color: var(--darkblue);
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 36px;
-}
-
-.img {
-  display: flex;
-}
-
-.img>img {
-  width: 100%;
-  height: 100%;
-  border-radius: 3rem;
-  box-shadow: 0 0 50px 30px rgba(57, 89, 74, 0.2);
-  
-}
-
 
 @media only screen and (max-width: 1200px) {
-  .heroSection {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 8.3rem 3.3rem 3.3rem;
-    padding-bottom: 70px;
+  .Header {
+    padding: 2.3rem 8.3rem 3.3rem;
     text-align: center;
-  }
-
-  .title,
-  .description {
-    display: flex;
-    flex-direction: column;
   }
 
   .content,
@@ -89,28 +60,10 @@
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 3.8rem;
     line-height: 3rem;
   }
 
-  .strings {
-    font-size: 1.3rem;
 
-  }
-
-  .contentBox {
-    gap: 10px;
-  }
-
-  .img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .img>img {
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-  }
 
 }

@@ -1,9 +1,16 @@
+import { motion, useScroll, useTransform } from 'framer-motion';
 import classes from './About.module.scss';
 
 export default function About() {
 
     return (
-        <section id="About" className={classes.section}>
+        <motion.section
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.4 }}
+
+            id="About" className={classes.section}>
 
             <div className="sectionTitle">
                 <p>עלינו</p>
@@ -22,7 +29,7 @@ export default function About() {
 
             </p>
 
-        </section>
+        </motion.section>
     );
 };
 

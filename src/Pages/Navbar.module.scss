@@ -46,7 +46,7 @@
 
 .active {
     color: var(--white);
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 
@@ -74,7 +74,7 @@
 @media screen and (max-width: 1200px) {
 
     .navbar {
-        padding: 1.3rem 3rem;
+        padding: 0;
     }
 
     .navHamburger {
@@ -91,8 +91,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(255, 255, 255);
-        top: -20rem;
+        top: -30rem;
         left: 0;
         width: 100%;
         transition: all ease-in-out 0.4s;
@@ -102,7 +101,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 3rem 0 0.6rem;
+        padding: 8rem 0 0.6rem;
         z-index: -100;
     }
 

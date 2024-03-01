@@ -1,14 +1,41 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useDragControls, AnimatePresence } from 'framer-motion';
 import Card from '../components/Card';
 
-import classes from './MyPortfolio.module.scss';
+import classes from './Gallery.module.scss';
 
 import DATA from "../data/index.json"
 
+const variants = {
+    enter: (direction) => {
+        return {
+            x: direction > 0 ? 1000 : -1000,
+            opacity: 0,
+            height: 0
+        };
+    },
+    center: {
+        zIndex: 1,
+        x: 0,
+        opacity: 1,
+        height: 'auto'
+    },
+    exit: (direction) => {
+        return {
+            zIndex: 0,
+            x: direction < 0 ? 1000 : -1000,
+            opacity: 0,
+            height: 0
+        };
+    }
+};
 
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset, velocity) => {
+    return Math.abs(offset) * velocity;
+};
 
-export default function MyPortfolio() {
+export default function Gallery() {
 
     const [index, setIndex] = useState(0);
     const [clickNext, setClickNext] = useState(false);
@@ -68,10 +95,37 @@ export default function MyPortfolio() {
                       ${clickNext ? classes.toRight + ' ' + classes.removed : ''}
                       ${clickPrev ? classes.toLeft + ' ' + classes.removed : ''}`
                         }>
-                        <Card
+                        <motion.li
+                            layout
                             key={DATA?.portfolio[index]?.id}
-                            item={DATA?.portfolio[index]}
-                        />
+                            className={classes.card}
+                        >
+                            <AnimatePresence initial={false}>
+                                <motion.img
+                                    src={DATA?.portfolio[index].src}
+                                    key={DATA?.portfolio[index].id}
+                                    variants={variants}
+                                    initial="enter"
+                                    animate="center"
+                                    exit="exit"
+                                    transition={{
+                                        x: { type: "spring", stiffness: 300, damping: 30 },
+                                        opacity: { duration: 0.2 }
+                                    }}
+                                    drag="x"
+                                    dragConstraints={{ left: 0, right: 0 }}
+                                    dragElastic={1}
+                                    onDragEnd={(e, { offset, velocity }) => {
+                                        const swipe = swipePower(offset.x, velocity.x);
+                                        if (swipe < -swipeConfidenceThreshold) {
+                                            prevProject();
+                                        } else if (swipe > swipeConfidenceThreshold) {
+                                            nextProject();
+                                        }
+                                    }}
+                                />
+                            </AnimatePresence>
+                        </motion.li>
                     </span>
 
                     <span className={classes.buttons}>

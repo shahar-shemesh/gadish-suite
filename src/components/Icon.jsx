@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import classes from '../Pages/ContactMe.module.scss';
+import classes from '../Pages/Contact.module.scss';
 
 export default function Icon({ iconClassName, text, iconHover }) {
 

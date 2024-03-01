@@ -1,8 +1,8 @@
-import classes from './MySkills.module.scss';
+import classes from './Information.module.scss';
 
 import DATA from "../data/index.json";
 
-export default function MySkills() {
+export default function Information() {
 
     return (
         <section id="mySkills">

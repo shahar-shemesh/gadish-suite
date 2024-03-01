@@ -1,4 +1,4 @@
-import classes from '../Pages/MyPortfolio.module.scss';
+import classes from '../Pages/Gallery.module.scss';
 
 export default function Card({ item }) {
 

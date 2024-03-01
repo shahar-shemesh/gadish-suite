@@ -1,16 +1,15 @@
-import HeroSection from "../HeroSection.jsx";
-import MySkills from "../MySkills.jsx";
+import Header from "../Header.jsx";
+import Information from "../Information.jsx";
 import About from "../About.jsx";
-import MyPortfolio from "../MyPortfolio.jsx";
-import ContactMe from "../ContactMe.jsx";
-
+import Gallery from "../Gallery.jsx";
+import Contact from "../Contact.jsx";
 export default function Home() {
 
     return (<>
-        <HeroSection />
+        <Header />
         <About />
-        <MySkills />
-        <MyPortfolio />
-        <ContactMe />
+        <Information />
+        <Gallery />
+        <Contact />
     </>)
 }

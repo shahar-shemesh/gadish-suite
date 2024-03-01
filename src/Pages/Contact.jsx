@@ -1,7 +1,7 @@
-import classes from './ContactMe.module.scss';
+import classes from './Contact.module.scss';
 import Icon from '../components/Icon';
 
-export default function ContactMe() {
+export default function Contact() {
 
 
   return (
@@ -18,33 +18,33 @@ export default function ContactMe() {
       <div className={classes.platforms}>
 
         <div className={classes.heading}>
-          <a href="mailto:shahar@usa.com" className={classes.icon}>
+          <a href="mailto:/" className={classes.icon}>
             <Icon
               iconClassName={"bx bx-envelope"}
               iconHover={"bx-tada"}
-              text={"shahar@usa.com"}
+              text={"Mail"}
             />
           </a>
         </div>
 
 
         <div className={classes.heading}>
-          <a href="https://github.com/shahar-shemesh" target="_blank" className={classes.icon}>
+          <a href="/" target="_blank" className={classes.icon}>
             <Icon
               iconClassName={"bx bxl-github"}
               iconHover={"bx-burst"}
-              text={"github.com/shahar-shemesh"}
+              text={"Facebook"}
             />
           </a>
         </div>
 
         <div className={classes.heading}>
-          <a href="https://www.linkedin.com/in/shaharshemesh/" className={classes.icon}
+          <a href="/" className={classes.icon}
             target="_blank">
             <Icon
               iconClassName={"bx bxl-linkedin-square"}
               iconHover={"bx-fade-down"}
-              text={"linkedin.com/in/shaharshemesh"}
+              text={"WhatsApp"}
             />
           </a>
         </div>
