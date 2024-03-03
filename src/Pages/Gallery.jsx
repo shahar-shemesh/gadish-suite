@@ -55,11 +55,11 @@ export default function Gallery() {
         window.addEventListener("resize", handleResize);
     });
 
-    const portfolioLength = (DATA.portfolio).length;
+    const galleryLength = (DATA.gallery).length;
 
     function nextProject() {
         setClickNext(true);
-        setIndex((prevIndex) => ((portfolioLength + (prevIndex + 1)) % portfolioLength));
+        setIndex((prevIndex) => ((galleryLength + (prevIndex + 1)) % galleryLength));
         setTimeout(() => {
             setClickNext(false);
         }, 200);
@@ -67,7 +67,7 @@ export default function Gallery() {
 
     function prevProject() {
         setClickPrev(true);
-        setIndex((prevIndex) => ((portfolioLength + (prevIndex - 1)) % portfolioLength));
+        setIndex((prevIndex) => ((galleryLength + (prevIndex - 1)) % galleryLength));
         setTimeout(() => {
             setClickPrev(false);
         }, 200);
@@ -77,7 +77,7 @@ export default function Gallery() {
 
     return (
 
-        <section className={classes.section} id="MyPortfolio">
+        <section className={classes.section} id="Gallery">
 
             <div className={classes.containerBox}>
                 <div className="sectionTitle">
@@ -97,13 +97,13 @@ export default function Gallery() {
                         }>
                         <motion.li
                             layout
-                            key={DATA?.portfolio[index]?.id}
+                            key={DATA?.gallery[index]?.id}
                             className={classes.card}
                         >
                             <AnimatePresence initial={false}>
                                 <motion.img
-                                    src={DATA?.portfolio[index].src}
-                                    key={DATA?.portfolio[index].id}
+                                    src={DATA?.gallery[index].src}
+                                    key={DATA?.gallery[index].id}
                                     variants={variants}
                                     initial="enter"
                                     animate="center"
@@ -130,14 +130,13 @@ export default function Gallery() {
 
                     <span className={classes.buttons}>
 
-                        <button id={classes.button} onClick={prevProject} className={`${classes.previous} ${classes.wider}`}>
+                        <button id={classes.button} onClick={nextProject} className={`${classes.next} ${classes.wider}`}>
                             <span className={classes.circle} aria-hidden="true">
                                 <span className={`${classes.icon} ${classes.arrow}`}></span>
                             </span>
                         </button>
 
-
-                        <button id={classes.button} onClick={nextProject} className={`${classes.next} ${classes.wider}`}>
+                        <button id={classes.button} onClick={prevProject} className={`${classes.previous} ${classes.wider}`}>
                             <span className={classes.circle} aria-hidden="true">
                                 <span className={`${classes.icon} ${classes.arrow}`}></span>
                             </span>

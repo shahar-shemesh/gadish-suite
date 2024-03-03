@@ -55,10 +55,11 @@ export default function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="heroSection"
-
+                to="Header"
             >
-                <img src="./media/logo.jpeg" className={classes.logo} />
+                <span className={classes.logo}>
+                    <img src="./media/logo.jpeg" />
+                </span>
             </Link>
 
             <a className={`${classes.navHamburger} ${navActive ? classes.active : ""}`} onClick={toggleNav}>
@@ -80,7 +81,7 @@ export default function Navbar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="heroSection"
+                            to="Header"
                             className={classes.content}
                         >
                             בית
@@ -116,10 +117,10 @@ export default function Navbar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="MyPortfolio"
+                            to="Services"
                             className={classes.content}
                         >
-                            חדרים
+                            שירותים
                         </Link>
                     </motion.li>
 
@@ -134,28 +135,28 @@ export default function Navbar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="MyPortfolio"
-                            className={classes.content}
-                        >
-                            גלרית תמונות
-                        </Link>
-                    </motion.li>
-
-                    <motion.li
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ type: 'spring', stiffness: 500 }}
-                    >
-                        <Link
-                            onClick={closeMenu}
-                            activeClass={classes.active}
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            to="MyPortfolio"
+                            to="Area"
                             className={classes.content}
                         >
                             מה באיזור
+                        </Link>
+                    </motion.li>
+
+                    <motion.li
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ type: 'spring', stiffness: 500 }}
+                    >
+                        <Link
+                            onClick={closeMenu}
+                            activeClass={classes.active}
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            to="Gallery"
+                            className={classes.content}
+                        >
+                            גלרית תמונות
                         </Link>
                     </motion.li>
 
@@ -165,6 +166,7 @@ export default function Navbar() {
             <motion.span
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 500 }}
+                className={classes.contactButton}
             >
                 <Link
                     onClick={closeMenu}

@@ -1,57 +1,12 @@
-// .section {
-//     display: grid;
-//     padding: 5rem 5.3rem 4rem;
-//     margin: 2rem 0 3rem;
-//     justify-content: space-evenly;
-//     align-content: stretch;
-// }
-
-
-.img img {
-    width: 100%;
-    height: 100%;
-}
-
-.img>img {
-    width: 100%;
-    height: 100%;
-}
 
 
 .description {
-    color: var(--darkblue);
     font-size: 1rem;
     font-weight: 400;
     line-height: 2rem;
-    direction: rtl;
-
 }
-
-.description>a {
-    text-decoration-line: underline;
-}
-
-.img {
-    display: flex;
-}
-
-.img>img {
-    width: 100%;
-    height: 100%;
-}
-
 
 @media only screen and (max-width: 1200px) {
-
-    // .section {
-    //     display: flex;
-    //     flex-direction: column;
-    //     padding: 2rem 2.3rem;
-    //     gap: 10px;
-    //     padding-top: 0;
-    //     padding-bottom: 0;
-    // }
-
 
     .contentBox {
         gap: 10px;
@@ -61,8 +16,6 @@
     .contentBox {
         line-height: 0;
     }
-
-
 
     .title {
         font-size: 35px;

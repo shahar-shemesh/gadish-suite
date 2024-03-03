@@ -31,7 +31,7 @@ export default function Contact() {
         <div className={classes.heading}>
           <a href="/" target="_blank" className={classes.icon}>
             <Icon
-              iconClassName={"bx bxl-github"}
+              iconClassName={"bx bxl-facebook"}
               iconHover={"bx-burst"}
               text={"Facebook"}
             />
@@ -42,7 +42,7 @@ export default function Contact() {
           <a href="/" className={classes.icon}
             target="_blank">
             <Icon
-              iconClassName={"bx bxl-linkedin-square"}
+              iconClassName={"bx bxl-whatsapp-square"}
               iconHover={"bx-fade-down"}
               text={"WhatsApp"}
             />

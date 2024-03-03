@@ -1,7 +1,7 @@
 .navbar {
     z-index: 100;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem 5.3rem;
     background: var(--black);
@@ -40,8 +40,17 @@
 
 .logo {
     cursor: default;
-    width: fit-content;
-    height: 15vh;
+    display: flex;
+    img {
+        width: 250px;
+    }
+
+}
+
+.ham {
+    display: flex;
+    width: 100%;
+    direction: ltr;
 }
 
 .active {
@@ -75,6 +84,10 @@
 
     .navbar {
         padding: 0;
+    }
+
+    .contactButton{
+        display: none;
     }
 
     .navHamburger {

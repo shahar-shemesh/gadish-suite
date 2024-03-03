@@ -1,59 +1,143 @@
 {
-    "skills": [
-      {
-        "id": "1",
-        "src": "./img/product-chain-1.png",
-        "title": "Front-End",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-      },
-      {
-        "id": "2",
-        "src": "./img/tag-1.png",
-        "title": "Back-End",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-      },
-      {
-        "id": "3",
-        "src": "./img/feather-pen-2.png",
-        "title": "OOP",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-      },
-      {
-        "id": "4",
-        "src": "./img/feather-pen-1.png",
-        "title": "Web Development",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-      }
-    ],
-    "portfolio": [
-      {
-        "id": "1",
-        "src": "./media/1.jpeg"
-      },
-      {
-        "id": "2",
-        "src": "./media/2.jpeg"
-      },
-      {
-        "id": "3",
-        "src": "./media/3.jpeg"
-      },
-      {
-        "id": "4",
-        "src": "./media/4.jpeg"
-      },
-      {
-        "id": "5",
-        "src": "./media/5.jpeg"
-      },
-      {
-        "id": "6",
-        "src": "./media/6.jpeg"
-      },
-      {
-        "id": "7",
-        "src": "./media/7.jpeg"
-      }
-    ]
-  }
-
+  "gallery": [
+    {
+      "id": "1.jpg",
+      "src": "https://i.ibb.co/KmzLD2S/1.jpg"
+    },
+    {
+      "id": "2.jpg",
+      "src": "https://i.ibb.co/mztq1Zw/2.jpg"
+    },
+    {
+      "id": "3.jpg",
+      "src": "https://i.ibb.co/XL1JFX5/3.jpg"
+    },
+    {
+      "id": "4.jpg",
+      "src": "https://i.ibb.co/B4VB3kd/4.jpg"
+    },
+    {
+      "id": "5.jpg",
+      "src": "https://i.ibb.co/2jQRmJ3/5.jpg"
+    },
+    {
+      "id": "6.jpg",
+      "src": "https://i.ibb.co/HCnQSXG/6.jpg"
+    },
+    {
+      "id": "7.jpg",
+      "src": "https://i.ibb.co/m5N2ktv/7.jpg"
+    },
+    {
+      "id": "8.jpg",
+      "src": "https://i.ibb.co/mBt8vyx/8.jpg"
+    },
+    {
+      "id": "9.jpg",
+      "src": "https://i.ibb.co/kh7P1GL/9.jpg"
+    },
+    {
+      "id": "10.jpg",
+      "src": "https://i.ibb.co/BgPjKTR/10.jpg"
+    },
+    {
+      "id": "11.jpg",
+      "src": "https://i.ibb.co/KzFJwTL/11.jpg"
+    },
+    {
+      "id": "12.jpg",
+      "src": "https://i.ibb.co/HYwL6fw/12.jpg"
+    },
+    {
+      "id": "13.jpg",
+      "src": "https://i.ibb.co/GPkkHFy/13.jpg"
+    },
+    {
+      "id": "14.jpg",
+      "src": "https://i.ibb.co/Nnq3JwW/14.jpg"
+    },
+    {
+      "id": "15.jpg",
+      "src": "https://i.ibb.co/nfTKcmx/15.jpg"
+    },
+    {
+      "id": "16.jpg",
+      "src": "https://i.ibb.co/BwGKGsr/16.jpg"
+    },
+    {
+      "id": "17.jpg",
+      "src": "https://i.ibb.co/RCF181q/17.jpg"
+    },
+    {
+      "id": "18.jpg",
+      "src": "https://i.ibb.co/rfPWvSg/18.jpg"
+    },
+    {
+      "id": "19.jpg",
+      "src": "https://i.ibb.co/kqNW7jM/19.jpg"
+    },
+    {
+      "id": "20.jpg",
+      "src": "https://i.ibb.co/rfPWvSg/18.jpg"
+    },
+    {
+      "id": "21.jpg",
+      "src": "https://i.ibb.co/rQ1GSHM/21.jpg"
+    },
+    {
+      "id": "22.jpg",
+      "src": "https://i.ibb.co/qJncWZ8/22.jpg"
+    },
+    {
+      "id": "23.jpg",
+      "src": "https://i.ibb.co/fHxbymv/23.jpg"
+    },
+    {
+      "id": "24.jpg",
+      "src": "https://i.ibb.co/Bfd5YWr/24.jpg"
+    },
+    {
+      "id": "25.jpg",
+      "src": "https://i.ibb.co/0K8BZvc/25.jpg"
+    },
+    {
+      "id": "26.jpg",
+      "src": "https://i.ibb.co/0JPYdXS/26.jpg"
+    },
+    {
+      "id": "28.jpg",
+      "src": "https://i.ibb.co/0cS59YJ/28.jpg"
+    },
+    {
+      "id": "29.jpg",
+      "src": "https://i.ibb.co/PCZ0Ttc/29.jpg"
+    },
+    {
+      "id": "30.jpg",
+      "src": "https://i.ibb.co/FmWgHBm/30.jpg"
+    },
+    {
+      "id": "31.jpg",
+      "src": "https://i.ibb.co/whv4m3k/31.jpg"
+    },
+    {
+      "id": "32.jpg",
+      "src": "https://i.ibb.co/315bS6S/32.jpg"
+    }
+  ],
+  "about": "נופש רומנטי או טיול משפחתי מגבש, בסוויטת גדיש תהנו מחווית אירוח ייחודית בסוויטת בוטיק ברמה גבוהה באזור הצפון המרהיב -  בעיר בית שאן ותיהנו מנוף עוצר נשימה של הרי הגלעד ועמק המעיינות. שפע מעיינות ונביעות באזור יהפכו את החופשה שלכם למושלמת. הסוויטה מאובזרת ברמה גבוהה ומפנקת: טלוויזיה, מרפסת מרווחת, שירותים ומקלחת, מיזוג אוויר, מכונת קפה ועוד. בואו לחוות את השילוב המושלם של נופים עוצרי נשימה, אירוח מפנק ושלווה גלילית.",
+  "area": [
+    {
+      "title": "ביקור במעיינות",
+      "text": "ישנם מעיינות רבים בעמק המעיינות, כל אחד עם ייחוד משלו. חלק מהמעיינות פופולריים לשחייה, בעוד שאחרים פופולריים יותר להליכה וטיולים."
+    },
+    {
+      "title": "טיולים",
+      "text": "ישנם מסלולי הליכה רבים בעמק המעיינות, החל מטיולים קלים ועד טיולים מאתגרים יותר. מסלולי הליכה רבים עוברים דרך נופים יפים, כולל נחלים, מעיינות ויערות."
+    },
+    {
+      "title": "ביקור באתרים היסטוריים",
+      "text": "ישנם אתרים היסטוריים רבים בעמק המעיינות, כולל תל בית שאן, גן השלושה וסחנה."
+    }
+  ]
+}

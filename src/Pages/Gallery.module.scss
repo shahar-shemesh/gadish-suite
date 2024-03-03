@@ -194,12 +194,11 @@
 .card {
     overflow: hidden;
     text-align: center;
-    height: 40vh;
+    min-height: 50vh;
 }
 
 .card img {
     margin: 1rem auto;
-    width: 90%;
     object-fit: fill;
 }
 
@@ -268,6 +267,10 @@
 
     .container {
         align-items: center;
+    }
+
+    .card img {
+        width: 100%;
     }
 
     .containerBox {

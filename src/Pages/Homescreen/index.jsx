@@ -1,14 +1,17 @@
 import Header from "../Header.jsx";
-import Information from "../Information.jsx";
 import About from "../About.jsx";
+import Services from "../Services.jsx";
+import Area from "../Area.jsx";
 import Gallery from "../Gallery.jsx";
 import Contact from "../Contact.jsx";
+
 export default function Home() {
 
     return (<>
         <Header />
         <About />
-        <Information />
+        <Services />
+        <Area />
         <Gallery />
         <Contact />
     </>)

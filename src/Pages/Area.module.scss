@@ -1,0 +1,22 @@
+.areaItems {
+    display: grid;
+    justify-content: center;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+    font-weight: 400;
+    font-size: 1rem;
+    h3 {
+        color: #ceb300;
+        margin-bottom: 0.5rem;
+    }
+    span {
+        line-height: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {}

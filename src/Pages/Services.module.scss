@@ -1,0 +1,49 @@
+.heading {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container span {
+    text-align: center;
+    i {
+        margin-bottom: 1rem;
+        color: #ceb300;
+    }
+}
+
+.title {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        gap: 2rem;
+    }
+
+    .container span {
+        text-align: center;
+        i {
+            margin-bottom: 1rem;
+            color: #ceb300;
+        }
+    }
+}

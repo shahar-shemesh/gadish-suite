@@ -1,25 +1,19 @@
 .Header {
   display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: 2fr 1fr;
   padding: 8.3rem 8.3rem 3.3rem;
   margin-bottom: 0;
   align-items: center;
-  justify-content: space-between;
   gap: 32px;
-  background-image: url("../../public/media/7.jpeg");
-  background-size:calc(100%);
+  background-image: url("https://i.ibb.co/Zz2F5KH/7.jpg");
+  background-size: calc(100%);
   background-position: center;
-  height: 80vh; 
-  background-repeat: no-repeat; 
-
+  height: 80vh;
+  background-repeat: no-repeat;
 }
 
 .desc {
   background-color: transparent;
 }
-
-
 
 .content {
   display: flex;
@@ -27,7 +21,7 @@
   align-items: flex-start;
   gap: 21.333px;
   background-color: transparent;
-
+  align-items: center;
 }
 
 .title {
@@ -39,14 +33,6 @@
   background-color: transparent;
 }
 
-.dot {
-  color: black;
-}
-
-.titleColor {
-  color: var(--primary);
-}
-
 
 @media only screen and (max-width: 1200px) {
   .Header {
@@ -54,16 +40,14 @@
     text-align: center;
   }
 
-  .content,
-  .contentBox {
+  .content {
     align-items: center;
   }
 
   .title {
     font-size: 3.8rem;
     line-height: 3rem;
+    margin-bottom: 0.5;
   }
-
-
 
 }

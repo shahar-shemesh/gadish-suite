@@ -1,6 +1,9 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import classes from './About.module.scss';
 
+import DATA from "../data/index.json";
+
+
 export default function About() {
 
     return (
@@ -16,17 +19,10 @@ export default function About() {
                 <p>עלינו</p>
             </div>
 
-            <hr /> {/* --------------------------------- */}
+            <hr />
 
             <p className={classes.description}>
-
-                קצת עלינו...
-                חדרי אירוח BY מציעים לכם חדרי בוטיק ברמה גבוהה באיזור הצפון.
-
-            </p>
-            <p className={classes.description}>
-                חדרי הבוטיק שלנו ממוקמים בפאתי העיר בית שאן וצופים לנוף המשגע של הרי הגלעד בעמק המעיינות. באיזור שפע מעיינות ונביעות המספקים לכם את החופשה המושלמת. החדרים מאובזרים ברמה גבוהה ומפנקת ומצויידים בטלויזיה המחוברת לערוצי yes , מרפסת מרווחת, שירותים ומקלחת, מיזוג אויר ומכונת קפה.
-
+                {DATA.about}
             </p>
 
         </motion.section>
