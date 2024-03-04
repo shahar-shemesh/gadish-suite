@@ -6,7 +6,9 @@
     "node": ">=12.x"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.0.6",
+    "mapbox-gl": "^3.2.0",
     "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-animated-slider": "^1.1.4",

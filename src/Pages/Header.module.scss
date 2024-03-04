@@ -4,7 +4,10 @@
   margin-bottom: 0;
   align-items: center;
   gap: 32px;
-  background-image: url("https://i.ibb.co/Zz2F5KH/7.jpg");
+  // background-image: url("https://i.ibb.co/Zz2F5KH/7.jpg");
+  // background-image: url("https://drive.google.com/uc?id=1tky_DspWbSVD5Rl1LFd3xbS6mNgYHQ9t");
+
+  background-image: url("https://i.ibb.co/C672wdQ/com-7.webp");
   background-size: calc(100%);
   background-position: center;
   height: 80vh;
@@ -36,7 +39,7 @@
 
 @media only screen and (max-width: 1200px) {
   .Header {
-    padding: 2.3rem 8.3rem 3.3rem;
+    padding: 0 8.3rem 0;
     text-align: center;
   }
 

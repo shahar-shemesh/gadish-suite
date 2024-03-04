@@ -118,6 +118,47 @@ hr {
   line-height: 24px;
 }
 
+#map {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 8rem;
+  justify-content: space-evenly;
+  align-content: stretch;
+
+}
+
+.map-container {
+  border-radius: 8px;
+  height: 400px;
+  color: white;
+  background-color: white;
+}
+
+.mapboxgl-ctrl-bottom-right,
+.mapboxgl-ctrl-bottom-left {
+  display: none;
+}
+
+.mapboxgl-ctrl-top-right{
+  background-color: transparent;
+}
+
+.mapboxgl-ctrl-icon {
+  background-color: white;
+}
+
+/* .sidebar {
+  background-color: rgb(35 55 75 / 90%);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+} */
 
 @media only screen and (max-width: 1200px) {
 
