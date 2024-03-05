@@ -28,7 +28,7 @@ export default function Services() {
 
                 <span>
                     <i class='bx bxs-tree white bx-md'></i>
-                    <p>מרפסת</p>
+                    <p>גינה</p>
                 </span>
 
                 <span>
