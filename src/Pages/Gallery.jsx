@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { motion, useDragControls, AnimatePresence } from 'framer-motion';
-import Card from '../components/Card';
 
 import classes from './Gallery.module.scss';
 
@@ -88,7 +87,6 @@ export default function Gallery() {
             <hr /> {/* --------------------------------- */}
 
             <ul className={classes.sectionContainer}>
-                <>
                     <span
                         className={
                             `${classes.animation}
@@ -97,7 +95,7 @@ export default function Gallery() {
                         }>
                         <motion.li
                             layout
-                            key={DATA?.gallery[index]?.id}
+                            key={DATA?.gallery[index].id}
                             className={classes.card}
                         >
                             <AnimatePresence initial={false}>
@@ -143,17 +141,8 @@ export default function Gallery() {
                         </button>
 
                     </span>
-                </>
-
-
-
-
-
-
-
 
             </ul>
-
 
         </section>
 

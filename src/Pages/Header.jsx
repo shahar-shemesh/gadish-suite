@@ -1,6 +1,6 @@
 
 import classes from './Header.module.scss';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, spring, useScroll, useTransform } from 'framer-motion';
 
 
 
@@ -24,20 +24,15 @@ export default function Header() {
                 style={{ scale: scaleText, y: yText }}
                 className={classes.content}
             >
-                <motion.h1
-                    className={classes.title}
-                    initial={{ textShadow: "0 0 6rem rgba(255, 255, 255, 1)" }}
-                    animate={{ textShadow: "0 0 2rem rgba(0, 0, 0, 1)" }}
-                    transition={{ duration: 12 }}
-                >
+                <h1 className={classes.title}>
                     סוויטת גדיש
-                </motion.h1>
+                </h1>
 
                 <motion.p
                     className={classes.desc}
-                    initial={{ textShadow: "0 0 2rem rgba(255, 255, 255, 0.8)", fontSize: "0" }}
-                    animate={{ textShadow: "0 0 3rem rgba(206, 179, 0, 1)", fontSize: "1rem" }}
-                    transition={{ duration: 2 }}
+                    initial={{ fontSize: 0 }}
+                    animate={{ fontSize: '1rem' }}
+                    transition={{ duration: 0.5 }}
                 >
                     פנינה נסתרת בצפון
                 </motion.p>

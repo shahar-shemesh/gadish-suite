@@ -24,7 +24,10 @@ export default function Area() {
 
             <div className={classes.areaItems}>
                 {DATA.area.map((item) => (
-                    <div className={classes.item}>
+                    <div
+                        className={classes.item}
+                        key={item.title}
+                    >
                         <span>
                             <h3>{item.title}</h3>
                             <p>{item.text}</p>
@@ -32,9 +35,6 @@ export default function Area() {
                     </div>
                 ))}
             </div>
-
-
-
 
         </motion.section>
     );

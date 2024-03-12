@@ -47,7 +47,7 @@ export default function Navbar() {
             initial="hidden"
             animate="visible"
 
-            transition={{ type: 'spring', duration: 1, stiffness: 500 }}
+            transition={{ type: 'spring', duration: 0.6, stiffness: 500 }}
             className={`${classes.navbar} ${navActive ? classes.active : ""}`}
         >
             <Link
@@ -70,10 +70,11 @@ export default function Navbar() {
 
             <div className={`${classes.items} ${navActive ? classes.active : ""}`}>
                 <ul>
-                    <motion.li
+                    {/* <motion.li
                         whileHover={{ scale: 1.1 }}
                         transition={{ type: 'spring', stiffness: 500 }}
-                    >
+                    > */}
+                    <li>
                         <Link
                             onClick={closeMenu}
                             activeClass={classes.active}
@@ -86,12 +87,10 @@ export default function Navbar() {
                         >
                             בית
                         </Link>
-                    </motion.li>
+                    </li>
 
-                    <motion.li
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ type: 'spring', stiffness: 500 }}
-                    >
+                    <li>
+
                         <Link
                             onClick={closeMenu}
                             activeClass={classes.active}
@@ -104,12 +103,9 @@ export default function Navbar() {
                         >
                             עלינו
                         </Link>
-                    </motion.li>
+                    </li>
 
-                    <motion.li
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ type: 'spring', stiffness: 500 }}
-                    >
+                    <li>
                         <Link
                             onClick={closeMenu}
                             activeClass={classes.active}
@@ -122,12 +118,9 @@ export default function Navbar() {
                         >
                             שירותים
                         </Link>
-                    </motion.li>
+                    </li>
 
-                    <motion.li
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ type: 'spring', stiffness: 500 }}
-                    >
+                    <li>
                         <Link
                             onClick={closeMenu}
                             activeClass={classes.active}
@@ -140,12 +133,9 @@ export default function Navbar() {
                         >
                             מה באיזור
                         </Link>
-                    </motion.li>
+                    </li>
 
-                    <motion.li
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ type: 'spring', stiffness: 500 }}
-                    >
+                    <li>
                         <Link
                             onClick={closeMenu}
                             activeClass={classes.active}
@@ -158,7 +148,7 @@ export default function Navbar() {
                         >
                             גלרית תמונות
                         </Link>
-                    </motion.li>
+                    </li>
 
                 </ul>
             </div>
