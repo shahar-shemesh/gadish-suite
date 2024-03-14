@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .container span {
@@ -27,6 +27,13 @@
     font-weight: 500;
 }
 
+svg {
+    fill: #ceb300;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 1rem;
+}
+
 
 @media only screen and (max-width: 1200px) {
 
@@ -37,6 +44,7 @@
 
     .container {
         gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .container span {

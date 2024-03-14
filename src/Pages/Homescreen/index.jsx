@@ -5,6 +5,7 @@ import Area from "../Area.jsx";
 import Gallery from "../Gallery.jsx";
 import Contact from "../Contact.jsx";
 import Map from "../../components/Map.jsx";
+import Reviews from "../Reviews.jsx";
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
         <Services />
         <Area />
         <Gallery />
+        <Reviews />
         <Contact />
         <Map />
     </>)

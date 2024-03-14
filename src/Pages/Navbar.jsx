@@ -96,7 +96,7 @@ export default function Navbar() {
                             activeClass={classes.active}
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={-210}
                             duration={500}
                             to="About"
                             className={classes.content}
@@ -111,7 +111,7 @@ export default function Navbar() {
                             activeClass={classes.active}
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={-100}
                             duration={500}
                             to="Services"
                             className={classes.content}
@@ -126,7 +126,7 @@ export default function Navbar() {
                             activeClass={classes.active}
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={-100}
                             duration={500}
                             to="Area"
                             className={classes.content}
@@ -141,12 +141,27 @@ export default function Navbar() {
                             activeClass={classes.active}
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={-100}
                             duration={500}
                             to="Gallery"
                             className={classes.content}
                         >
                             גלרית תמונות
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link
+                            onClick={closeMenu}
+                            activeClass={classes.active}
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            to="Reviews"
+                            className={classes.content}
+                        >
+                            לקוחותינו מספרים
                         </Link>
                     </li>
 
