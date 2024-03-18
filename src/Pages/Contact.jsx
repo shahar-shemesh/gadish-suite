@@ -28,7 +28,7 @@ export default function Contact() {
         </div>
 
         <div className={classes.heading}>
-          <a href="https://web.whatsapp.com/send/?phone=0522359800&text=%D7%94%D7%99%D7%99+%D7%91%D7%A7%D7%A9%D7%A8+%D7%9C%D7%A1%D7%95%D7%95%D7%99%D7%98%D7%94" target="_blank" className={classes.icon}>
+          <a href="https://api.whatsapp.com/send/?phone=972522359800&text=%D7%94%D7%99%D7%99+%D7%91%D7%A7%D7%A9%D7%A8+%D7%9C%D7%A1%D7%95%D7%95%D7%99%D7%98%D7%94" target="_blank" className={classes.icon}>
             <Icon
               iconClassName={"bx bxl-whatsapp"}
               iconHover={"bx-burst"}
@@ -49,7 +49,7 @@ export default function Contact() {
         </div>
 
         <div className={classes.heading}>
-          <a href="tel:0522359800" target="_blank" className={classes.icon}>
+          <a href="tel:0522665190" target="_blank" className={classes.icon}>
             <Icon
               iconClassName={"bx bxs-phone"}
               iconHover={"bx-burst"}
