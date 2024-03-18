@@ -14,12 +14,26 @@ export default function Header() {
     const yText = useTransform(scrollY, [0, 200, 300, 500], [0, 50, 50, 300]);
     const scaleText = useTransform(scrollY, [0, 300], [1, 1.5]);
 
+
+
+    function myFunction() {
+        const video = document.getElementById("myVideo");
+        if (video.paused) {
+            video.play();
+        }
+    }
     return (
         <motion.section
             id="Header"
             className={classes.Header}
             style={{ opacity: opacityHeader, y: yHeader }}
         >
+            <div className={classes.headerVideo}>
+                <video className={classes.backgroundVideo} autoplay="true" muted loop>
+                    <source src="https://ik.imagekit.io/c4fuxyeat/header.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+
             <motion.div
                 style={{ scale: scaleText, y: yText }}
                 className={classes.content}

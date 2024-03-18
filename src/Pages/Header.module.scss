@@ -1,3 +1,13 @@
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  align-items: center;
+}
+
 .Header {
   display: grid;
   padding: 8.3rem 8.3rem 3.3rem;
@@ -7,11 +17,13 @@
   // background-image: url("https://i.ibb.co/Zz2F5KH/7.jpg");
   // background-image: url("https://drive.google.com/uc?id=1tky_DspWbSVD5Rl1LFd3xbS6mNgYHQ9t");
 
-  background-image: url("https://i.ibb.co/C672wdQ/com-7.webp");
-  background-size: calc(100%);
-  background-position: center;
+  // background-image: url("https://i.ibb.co/C672wdQ/com-7.webp");
+  // background-size: calc(100%);
+  // background-position: center;
+  // background-repeat: no-repeat;
   height: 80vh;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 .desc {
@@ -19,12 +31,15 @@
 }
 
 .content {
+  bottom: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 21.333px;
   background-color: transparent;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .title {
@@ -45,6 +60,7 @@
 
   .content {
     align-items: center;
+    bottom: 30%;
   }
 
   .title {
