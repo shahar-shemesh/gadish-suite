@@ -1,10 +1,35 @@
+import { useState } from 'react';
+
+
 import classes from './Contact.module.scss';
 import Icon from '../components/Icon';
+import Modal from '../components/Modal';
 
 export default function Contact() {
 
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  return (
+
+  function handleClickModal() {
+    setModalIsOpen(prevValue => !prevValue);
+  };
+
+  return (<>
+    <Modal open={modalIsOpen} onClose={handleClickModal}>
+      <div className={classes.telephones}>
+        <div className={classes.contactPhone}>
+          <p>יניב:</p>
+          <a href="tel:0522359800">052-235-9800</a>
+        </div>
+
+        <div className={classes.contactPhone}>
+          <p>דקל:</p>
+          <a href="tel:0522665190">052-266-5190</a>
+        </div>
+      </div>
+
+    </Modal>
+
 
     <section id="Contact" className={classes.section}>
 
@@ -49,7 +74,7 @@ export default function Contact() {
         </div>
 
         <div className={classes.heading}>
-          <a href="tel:0522665190" target="_blank" className={classes.icon}>
+          <a onClick={handleClickModal} target="_blank" className={classes.icon}>
             <Icon
               iconClassName={"bx bxs-phone"}
               iconHover={"bx-burst"}
@@ -62,5 +87,5 @@ export default function Contact() {
 
     </section>
 
-  );
+  </>);
 }

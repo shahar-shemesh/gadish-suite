@@ -21,6 +21,7 @@
 .heading a {
     text-decoration: none;
     color: var(--darkblue);
+    cursor: pointer;
 }
 
 .icon {
@@ -29,6 +30,21 @@
     gap: 0.7rem;
 }
 
+.telephones {
+    text-align: center;
+}
+
+.contactPhone{
+    padding: 2rem 4rem;
+    a {
+        font-size: large;
+        font-weight: bolder;
+    }
+}
+
+#closeDialog{
+    display: none;
+}
 
 
 @media only screen and (max-width: 1200px) {
