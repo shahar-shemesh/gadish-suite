@@ -57,6 +57,10 @@ export default function Services() {
                     <p>אינטרנט מהיר</p>
                 </span>
 
+                <span>
+                    <i className='bx bxs-parking white bx-md'></i>
+                    <p>חניה חופשית</p>
+                </span>
 
 
             </div>
