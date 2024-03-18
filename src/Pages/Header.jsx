@@ -29,7 +29,7 @@ export default function Header() {
             style={{ opacity: opacityHeader, y: yHeader }}
         >
             <div className={classes.headerVideo}>
-                <video className={classes.backgroundVideo} autoplay="true" muted loop playsinline>
+                <video className={classes.backgroundVideo} autoplay="true" muted loop playsInline>
                     <source src="https://ik.imagekit.io/c4fuxyeat/header.mp4" type="video/mp4"></source>
                 </video>
             </div>
