@@ -18,33 +18,42 @@ export default function Contact() {
       <div className={classes.platforms}>
 
         <div className={classes.heading}>
-          <a href="mailto:/" className={classes.icon}>
+          <a href="mailto:Gadish.ie@gmail.com" className={classes.icon}>
             <Icon
               iconClassName={"bx bx-envelope"}
               iconHover={"bx-tada"}
-              text={"Mail"}
+              text={"שלחו לנו מייל"}
             />
           </a>
         </div>
 
-
         <div className={classes.heading}>
-          <a href="/" target="_blank" className={classes.icon}>
+          <a href="https://api.whatsapp.com/send/?phone=0522359800&text=%D7%94%D7%99%D7%99+%D7%91%D7%A7%D7%A9%D7%A8+%D7%9C%D7%A1%D7%95%D7%95%D7%99%D7%98%D7%94" target="_blank" className={classes.icon}>
             <Icon
-              iconClassName={"bx bxl-facebook"}
+              iconClassName={"bx bxl-whatsapp"}
               iconHover={"bx-burst"}
-              text={"Facebook"}
+              text={"כתבו לנו בווצאפ"}
             />
           </a>
         </div>
 
         <div className={classes.heading}>
-          <a href="/" className={classes.icon}
+          <a href="https://www.instagram.com/gadish_suite" className={classes.icon}
             target="_blank">
             <Icon
-              iconClassName={"bx bxl-whatsapp-square"}
+              iconClassName={"bx bxl-instagram-alt"}
               iconHover={"bx-fade-down"}
-              text={"WhatsApp"}
+              text={"האינסטגרם שלנו"}
+            />
+          </a>
+        </div>
+
+        <div className={classes.heading}>
+          <a href="tel:0522359800" target="_blank" className={classes.icon}>
+            <Icon
+              iconClassName={"bx bxs-phone"}
+              iconHover={"bx-burst"}
+              text={"התקשרו"}
             />
           </a>
         </div>

@@ -6,10 +6,11 @@ import Gallery from "../Gallery.jsx";
 import Contact from "../Contact.jsx";
 import Map from "../../components/Map.jsx";
 import Reviews from "../Reviews.jsx";
-
+import WhatsappIcon from "../../components/WhatsappIcon.jsx";
 export default function Home() {
 
     return (<>
+        <WhatsappIcon />
         <Header />
         <About />
         <Services />

@@ -13,7 +13,7 @@
     align-content: space-between;
     justify-content: center;
     justify-items: stretch;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 
@@ -38,9 +38,11 @@
     }
 
     .platforms {
-        display: flex;
+        display: grid;
         gap: 3rem;
         justify-items: stretch;
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
     .icon p {
