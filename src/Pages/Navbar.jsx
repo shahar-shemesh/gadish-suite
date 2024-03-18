@@ -58,7 +58,7 @@ export default function Navbar() {
                 to="Header"
             >
                 <span className={classes.logo}>
-                    <img src="./media/logo.jpeg" />
+                    <img src="./media/gadish.png" />
                 </span>
             </Link>
 
