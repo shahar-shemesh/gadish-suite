@@ -32,23 +32,39 @@ p {
 }
 
 
+
+.fixedIcons {
+  display: flex;
+}
+
 .whatsapp-ico {
   fill: white;
-  width: 50px;
-  height: 50px;
-  padding: 3px;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
   background-color: #4dc247;
   border-radius: 50%;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
   position: fixed;
-  bottom: 20px;
+  bottom: 5px;
   right: 20px;
   z-index: 10;
 }
 
-.whatsapp-ico:hover {
-  box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+.waze-ico {
+  fill: white;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  background-color: #05c8f7;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+  position: fixed;
+  bottom: 65px;
+  right: 20px;
+  z-index: 10;
 }
 
 
