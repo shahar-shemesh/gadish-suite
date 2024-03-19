@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import { motion } from 'framer-motion';
 
 function Modal({ open, children, onClose }) {
     const dialog = useRef();
@@ -16,12 +17,22 @@ function Modal({ open, children, onClose }) {
     }, [open]);
 
     return createPortal(
-        <dialog className="modal" ref={dialog} onClose={onClose}>
+        <motion.dialog
+            key={open}
+            initial={{ scale: 0.5 }}
+            animate={{ scale: 1 }}
+            viewport={{ once: false }}
+            transition={{ type: 'spring', duration: 0.4 }}
+            className="modal"
+            ref={dialog}
+            onClose={onClose}
+        >
             {open ? children : null}
             <form method='dialog'>
-                <button id='closeDialog' style={{display: "none"}}></button>
+                <button id='closeDialog' style={{ display: "none" }}></button>
             </form>
-        </dialog>,
+        </motion.dialog>
+        ,
         document.getElementById('modal')
     );
 }

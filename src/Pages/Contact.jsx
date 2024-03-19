@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 import classes from './Contact.module.scss';
@@ -15,20 +16,23 @@ export default function Contact() {
   };
 
   return (<>
-    <Modal open={modalIsOpen} onClose={handleClickModal}>
-      <div className={classes.telephones}>
-        <div className={classes.contactPhone}>
-          <p>יניב:</p>
-          <a href="tel:0522359800">052-235-9800</a>
+    <AnimatePresence>
+      <Modal open={modalIsOpen} onClose={handleClickModal}>
+        <div className={classes.telephones}>
+          <div className={classes.contactPhone}>
+            <p>יניב:</p>
+            <a href="tel:0522359800">052-235-9800</a>
+          </div>
+
+          <div className={classes.contactPhone}>
+            <p>דקל:</p>
+            <a href="tel:0522665190">052-266-5190</a>
+          </div>
         </div>
 
-        <div className={classes.contactPhone}>
-          <p>דקל:</p>
-          <a href="tel:0522665190">052-266-5190</a>
-        </div>
-      </div>
+      </Modal>
+    </AnimatePresence>
 
-    </Modal>
 
 
     <section id="Contact" className={classes.section}>
