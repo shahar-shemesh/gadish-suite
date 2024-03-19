@@ -48,7 +48,7 @@ export default function Header() {
                     animate={{ fontSize: '1rem' }}
                     transition={{ duration: 0.5 }}
                 >
-                    פנינה נסתרת בצפון
+                    פנינה נסתרת בצפון...
                 </motion.p>
 
             </motion.div>
