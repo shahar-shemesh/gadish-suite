@@ -30,6 +30,15 @@
   background-color: transparent;
 }
 
+.title {
+  background-color: transparent;
+
+  img {
+    width: 30rem;
+    background-color: transparent;
+  }
+}
+
 .content {
   bottom: 30%;
   display: flex;
@@ -40,21 +49,11 @@
   align-items: center;
   position: relative;
   z-index: 1;
-}
-
-.title {
-  color: white;
-  font-size: 6.5rem;
-  line-height: 5.5rem;
-  font-weight: 700;
-  align-self: stretch;
-  background-color: transparent;
-}
-
+} 
 
 @media only screen and (max-width: 1200px) {
   .Header {
-    padding: 0 8.3rem 0;
+    padding: 0 3.3rem 0;
     text-align: center;
   }
 
@@ -63,10 +62,17 @@
     top: -70%;
   }
 
+
   .title {
-    font-size: 3.8rem;
-    line-height: 3rem;
-    // margin-bottom: 0.5;
+    background-color: transparent;
+    direction: ltr;
+
+    img {
+      direction: ltr;
+      
+      width: 50vw;
+      background-color: transparent;
+    }
   }
 
 }

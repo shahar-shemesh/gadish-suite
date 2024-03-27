@@ -29,7 +29,7 @@ export default function Header() {
             style={{ opacity: opacityHeader, y: yHeader }}
         >
             <div className={classes.headerVideo}>
-                <video className={classes.backgroundVideo} autoplay="true" muted loop playsInline>
+                <video className={classes.backgroundVideo} autoPlay={true} muted loop playsInline>
                     <source src="https://ik.imagekit.io/c4fuxyeat/header.mp4" type="video/mp4"></source>
                 </video>
             </div>
@@ -38,9 +38,9 @@ export default function Header() {
                 style={{ scale: scaleText, y: yText }}
                 className={classes.content}
             >
-                <h1 className={classes.title}>
-                    סוויטת גדיש
-                </h1>
+                <div className={classes.title}>
+                    <img className={classes.logo} src="./media/gadish.png" />
+                </div>
 
                 <motion.p
                     className={classes.desc}
